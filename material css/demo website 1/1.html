@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="1.css">       
+    
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">
+                        Navbar Link
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+    <!-- <div class="parallax-container">
+
+        
+        <div class="container center">
+            <h1 class="orange-text" style="margin-top: 10vh !important;">
+                Starter Template
+            </h1>
+            <p class="truncate">
+                A modern responsive front-end framework based on Material Design
+            </p>
+            <button class="btn btn-large orange">
+                GET STARTED
+            </button>
+        </div>
+        <div class="parallax">
+            <img src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+    </div> -->
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center orange-text text-lighten-2">Parallax Template</h1>
+            <div class="row center">
+              <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            </div>
+            <div class="row center">
+              <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+            </div>
+            <br><br>
+    
+          </div>
+        </div>
+        <div class="parallax"><img src="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Unsplashed background img 1" style="transform: translate3d(-50%, 328.996px, 0px); opacity: 1;"></div>
+      </div>
+    </section>
+    <section class="cards">
+        <div class="container" style="margin-top: 10rem;">
+            <div class="row center">
+                <div class="col l4 s12">
+                    <i class="material-icons medium">flash_on</i>
+                    <h5>
+                        Speeds up development
+                    </h5>
+                    <p style="font-size: 0.75rem; font-weight:200;">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                </div> 
+                <div class="col l4 s12">
+                    <i class="material-icons medium">flash_on</i>
+                    <h5>
+                        Speeds up development
+                    </h5>
+                    <p style="font-size: 0.75rem; font-weight:200;">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                </div> 
+                <div class="col l4 s12">
+                    <i class="material-icons medium blue-text">flash_on</i>
+                    <h5>
+                        Speeds up development
+                    </h5>
+                    <p style="font-size: 0.75rem; font-weight:200;">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                </div> 
+            </div>
+   
+        </div>
+    </section>
+    <footer class="orange section">
+        <div class="container">
+            <div class="row">
+                <div class="col l6">
+                    <h6>
+                        Company Bio
+                    </h6>
+                    <p>
+                        We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
+                    </p>
+                </div>
+                <div class="col l3 s12">
+                    <h6>Settings</h6>
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 4</li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h6>Connect</h6>
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="text">
+                    Made By Materialize
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+    });
+    </script>
+</body>
+</html>

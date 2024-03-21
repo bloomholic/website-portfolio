@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 1.5;
+}
+section.preloader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc0000;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 1s;
+    position: absolute;
+
+}
+.preloader.fade{
+    opacity: 0;
+}
+.preloader img{
+    width: 50%;
+}
+
+.container.header{
+    background-color: #cc0000;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.header__logo{
+    max-width: 40%;
+    margin: 10px;
+}
+.header__logo img{
+    width: 100%;
+}
+.header__search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header__search input{
+    width: 70%;
+    color: rgb(171, 171, 171);
+    border-radius: 5px;
+    border:none; 
+    padding: 0.25rem;   
+}
+.showcase__notice{
+    width: 80%;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0 auto;
+    background-color: #7c0000;
+    font-size: 0.6rem;
+}
+.notice__text__2{
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+.showcase__notice__icon {
+    color: white;
+    align-self: end;
+}
+.showcase__notice__icon i {
+   font-size: 1.5rem;
+}
+.showcase__card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    color: black;
+}
+.card{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    color: black;
+    border: 1px solid rgb(203, 203, 203);
+    height: 125px;
+    
+}
+
+.card:nth-child(odd){
+    margin: 5px 5px 5px 20px;
+}
+.card:nth-child(even){
+    margin: 5px 20px 5px 5px;
+}
+.card:nth-child(1), .card:nth-child(2){
+    margin-top: 20px;
+}
+.card__icon i {
+    font-size: 2rem;
+}
+.card h2{
+    font-size: 1rem;
+}
+.card h3{
+    font-size: 0.6rem;
+}
+.card__icon{
+    align-self: end;
+}
+.card__text__subheading{
+    color: #7c0000;
+}
+.navigation{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transform: scale(1.1);
+    color:rgb(78, 78, 78);
+}
+
+

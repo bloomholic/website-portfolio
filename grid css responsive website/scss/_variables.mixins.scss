@@ -1,0 +1,19 @@
+$button-color: #4a4a4a;
+@mixin padding-high-global {
+    padding: 2rem 0;
+}
+@mixin margin-inside-global {
+    margin: 1rem 0;
+}
+@mixin margin-inside-text {
+    margin: 1rem;
+}
+@mixin button-primary {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: $button-color;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten($button-color, 10%);
+    }
+}

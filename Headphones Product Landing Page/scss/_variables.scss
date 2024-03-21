@@ -1,0 +1,11 @@
+$font-color-1: #333;
+$primary-color: #a67b44;
+$secondary-color: white;
+
+@mixin heading-font-sizes($base-font-size: 4rem) {
+    @for $i from 1 through 6 {
+      h#{$i} {
+        font-size: $base-font-size - calc($i/2);
+      }
+    }
+  }

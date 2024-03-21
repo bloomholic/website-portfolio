@@ -1,0 +1,33 @@
+.card button {
+    padding: 1.5rem 3rem;
+    $bg-color: #333;
+    background-color: $bg-color;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+        background-color: lighten($bg-color, 20%);
+    }
+    &:active {
+        background-color: darken($bg-color, 20%);
+        transform: scale(0.98);
+        transition: transform 2s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+}
+.card-red button {
+    color: white; 
+}
+
+
+.card-dark button {
+    color: #333;
+    $bg-color: rgb(213, 213, 213);
+    background-color: $bg-color;
+    &:hover {
+        background-color: lighten($bg-color, 20%);
+    }
+    &:active {
+        background-color: darken($bg-color, 20%);
+    }
+}

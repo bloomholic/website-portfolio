@@ -1,0 +1,47 @@
+
+.hero-img-container {
+    position: absolute;
+    transform: rotate(25deg);
+    top:80px;
+}
+.hero_img2 {
+    position: absolute;
+    height: 550px;
+    left: 200px;
+    bottom:240px;
+}
+.hero_img1 {
+    height: 600px;
+}
+.hero {
+    min-height: 60vh;
+    overflow-x: clip;
+}
+@media (max-width: 1000px) {
+    body > section > div > div > div.column.is-one-third.has-text-left-mobile.is {
+        padding-top: 100px !important;
+        
+    }
+}
+@media (max-width: 1000px) {
+    body > section > div > div > div.column.is-one-third.has-text-left-mobile.is {
+        padding-top: 10px !important;
+        
+    }
+    .hero_img2 {
+       
+        height: 65vh;
+        left: 15vw;
+        bottom:10vw;
+    }
+    .hero_img1 {
+        height: 70vh;
+    }
+    .hero-img-container {
+        left : 5vw;
+        top: 200px;
+    }
+}    
+
+/* hero css till here */
+

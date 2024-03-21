@@ -1,0 +1,145 @@
+$primary-color: orange;
+
+
+@mixin heading-font-sizes($base-font-size: 4rem) {
+    @for $i from 1 through 10 {
+      h#{$i} {
+        font-size: $base-font-size - calc($i/2);
+      }
+    }
+  }
+// Define the base unit
+$base-unit: 0.5rem;
+
+// Define the number of scales
+$scales: 10;
+
+// Loop for top padding
+@for $i from 1 through $scales {
+  $padding: $base-unit * $i;
+
+  .pt-#{$i} {
+    padding-top: $padding;
+  }
+}
+
+// Loop for bottom padding
+@for $i from 1 through $scales {
+  $padding: $base-unit * $i;
+
+  .pb-#{$i} {
+    padding-bottom: $padding;
+  }
+}
+
+// Loop for left padding
+@for $i from 1 through $scales {
+  $padding: $base-unit * $i;
+
+  .pl-#{$i} {
+    padding-left: $padding;
+  }
+}
+
+// Loop for right padding
+@for $i from 1 through $scales {
+  $padding: $base-unit * $i;
+
+  .pr-#{$i} {
+    padding-right: $padding;
+  }
+}
+
+// Loop for top margin
+@for $i from 1 through $scales {
+  $margin: $base-unit * $i;
+
+  .mt-#{$i} {
+    margin-top: $margin;
+  }
+}
+
+// Loop for bottom margin
+@for $i from 1 through $scales {
+  $margin: $base-unit * $i;
+
+  .mb-#{$i} {
+    margin-bottom: $margin;
+  }
+}
+
+// Loop for left margin
+@for $i from 1 through $scales {
+  $margin: $base-unit * $i;
+
+  .ml-#{$i} {
+    margin-left: $margin;
+  }
+}
+
+// Loop for right margin
+@for $i from 1 through $scales {
+  $margin: $base-unit * $i;
+
+  .mr-#{$i} {
+    margin-right: $margin;
+  }
+}
+
+// Loop for top/bottom (x-axis) padding
+@for $i from 1 through $scales {
+  $padding: $base-unit * $i;
+
+  .px-#{$i} {
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+}
+
+// Loop for left/right (y-axis) padding
+@for $i from 1 through $scales {
+  $padding: $base-unit * $i;
+
+  .py-#{$i} {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+}
+
+// Loop for top/bottom (x-axis) margin
+@for $i from 1 through $scales {
+  $margin: $base-unit * $i;
+
+  .mx-#{$i} {
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+}
+
+// Loop for left/right (y-axis) margin
+@for $i from 1 through $scales {
+  $margin: $base-unit * $i;
+
+  .my-#{$i} {
+    margin-top: $margin;
+    margin-bottom: $margin;
+  }
+}
+
+// Loop for all sides padding
+@for $i from 1 through $scales {
+  $padding: $base-unit * $i;
+
+  .p-#{$i} {
+    padding: $padding;
+  }
+}
+
+// Loop for all sides margin
+@for $i from 1 through $scales {
+  $margin: $base-unit * $i;
+
+  .m-#{$i} {
+    margin: $margin;
+  }
+}

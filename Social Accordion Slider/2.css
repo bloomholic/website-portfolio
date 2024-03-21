@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+    
+}
+h1 {
+    /* margin-top: 5rem; */
+}
+.accordion {
+    height: 200px;
+    width: 95%;
+    min-width: 800px;
+    background-color: #333;
+    position: relative;
+    left: 50%;
+    margin-top: 5rem;
+    transform: translateX(-50%);
+    display: flex;
+}
+.tag {
+    height: 100%;
+    width: 200px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out 0.1s;
+    border-right: 1px solid black;
+    position: relative;
+}
+a { 
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+}
+.social a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+/* font-awesome unicode implementation */
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  .social a:after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Font Awesome 5 Brands"; content: "\f167";
+    font-weight: 400;
+    font-size: 2.5rem;
+    
+  }
+
+
+.social a:after {
+    height: 100%;
+    width: 200px;
+    background-color: #132eb1;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.tag:hover .social a:after {
+   left:0px;    
+}
+.tag {
+    overflow: hidden;
+}
+.tag:hover .social a:before {
+    left: -200px;
+}
+.tag:hover {
+    width: 600px;
+}
+.content {
+    width: 400px;
+    margin: 50px 0px 50px 200px;
+    padding:1rem;
+    text-align: left;
+    white-space: normal;
+    /* display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column; */
+}
+.p{
+    margin-top: 2rem;
+    white-space: normal;
+}
+
+
+/* brand specific colors and icons */
+.youtube a:after {
+    background-color: red;
+    color: white;
+}
+.instagram a:after {
+    content: '\f16d';
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45);
+    color: white;
+    font-weight: 400;
+}
+.linkedin a:after {
+    content: '\f08c';
+    background-color: #0a66c2;
+    color: white;
+    font-weight: 400;
+}
+.github a:after {
+    content: '\f09b';
+    background-color: #ffffff;
+    color: #0d1117;
+    font-weight: 400;
+}
+.twitter a:after {
+    content: '\e61b';
+    background-color: #000000;
+    color: #e7e9ea;
+    font-weight: 400;
+}
+
+@media (max-width: 1360px){
+    .content {
+        max-width: 25vw;
+    }
+
+}
+@media (max-width: 1200px) {
+    .content {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        max-width: 20vw;
+        /* margin:20px 0 0 200px; */
+        margin: 0 0 0 200px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .tag{
+        width: 200px;
+    }
+    .content h2 {
+        margin-top: -0.5rem;
+    }
+    p {
+        margin-top: 0.5rem;
+    }
+}
+@media (max-width: 968px) {
+    .content {
+        /* width: 200px; */
+        margin-left: 200px;
+        padding: 0;
+    }
+    .tag{
+        /* width: 100px; */
+    }
+}
+@media (max-width: 810px) {
+    .accordion {
+        display: block;
+        height: 100%;
+        width: 100%;
+        min-width: auto;
+    }
+    .tag {
+        display: block;
+        height: 20vh;
+        width: 100%;
+    }
+    .content {
+        margin-left: 300px;
+    }
+    .social a:after {
+        height: 100%;
+        width: 200px;   
+        position: absolute;
+        top: 0;
+        left: 30%;
+        transition: all 0.5s ease-in-out 0.1s;
+    }
+    .tag:hover .social a:after {
+        left:40%;    
+     }
+    .content {
+        text-align: left;
+        width: 100vw;
+    }
+    .content h2 {
+        font-size: 2rem;  
+        transition: all 0.3s ease-in-out 0.1s;
+    }
+    .tag:hover .social a:before {
+        left: 0;
+    }
+    .tag:hover {
+        width: 100%;
+    }
+    .tag:hover h2 {
+        transform: scale(1.1);
+    }
+    
+}
+@media (max-width: 460px) {
+    .content {
+        display: none;
+    }
+    .accordion {
+        
+    }
+    .tag {
+        padding: 0;
+    }
+    a {
+        
+    }
+    .social {
+        width: 100%;
+    }
+    .social, a::after {
+        /* position: static !important; */
+        padding: 0;
+        margin: 0;
+        left: 0 !important;
+        width: 100vw !important;
+       
+    }
+    .social a {
+        padding: 0;
+        margin: 0;
+    }
+}

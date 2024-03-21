@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+body{
+    font-family: 'Charm', cursive;
+    margin: 0;
+}
+.heading{
+    font-size: 5rem;
+    color: transparent;
+    background: url('https://i.ibb.co/89Cf3dm/text-bg.png') no-repeat center center/cover;
+    background-clip: text;
+    animation: background-position 30s infinite normal;
+}
+@keyframes background-position{
+    0%{background-position: 0% 30%;}
+    100%{background-position: 100% 50%;}
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000 url('https://i.ibb.co/1sQXJ4z/page-bg.png') center center/cover no-repeat;
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+}
+section.container{
+    /* max-width: 1800px; */
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+   
+}
+.login{
+    flex: 4;
+}
+.tagline{
+    background: #181818 url('https://image.ibb.co/cO9Lxq/login-bg.jpg') center center/cover no-repeat;
+    flex: 5.5;
+
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    
+}
+.tagline__headline{
+    font-size: 3rem;
+    color: white;
+}
+.tagline__btn{
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 0.6rem;
+    width: 40%;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.login{
+    display: grid;
+    height: 100vh;
+    
+}
+.login > *{
+    justify-self: center;
+    align-self: center;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+.login__options{
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+input {
+    height: 50px;
+}
+.btn {
+    background-color: #fe7935;
+}
+.login__logo {
+    align-self: end;
+}
+.login__options > * > *{
+    text-decoration: none;
+    color: white;
+  
+}
+.login__options > * {
+    padding: 5px;
+}
+.line {
+    
+    display: flex;
+   gap: 20px;
+}
+.line > * {
+    flex: auto;
+}
+.login__options {
+    width: 60%;
+}
+.login__options__create-account{
+    border: 1px solid white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+.login__ps__links{
+    text-align: center;
+    padding: 1rem;
+}

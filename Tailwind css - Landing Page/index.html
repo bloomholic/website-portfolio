@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* .abc {
+            margin-top: -50%;
+        } */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 50%;
+            }
+        }
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 75%;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mx-auto py-8 flex justify-between items-center">
+        <div class="logo text-3xl">
+            <i class="fa-solid fa-money-bill-wheat text-orange-500"></i> Surcharge
+        </div>
+        <ul class="link-wrapper md:flex flex-row gap-4 items-center hidden">
+            <li class="link">
+                <a href="#">Pricing</a>
+            </li>
+            <li class="link">
+                <a href="#">Pricing</a>
+            </li>
+            <li class="link">
+                <a href="#">Pricing</a>
+            </li>
+            <li class="link">
+                <a href="#">Pricing</a>
+            </li>
+            <li class="link">
+                <a href="#">Pricing</a>
+            </li>
+        </ul>
+        <button class="bg-orange-500 text-white p-2 px-3 rounded-full hidden md:block">
+            Get Started
+        </button>
+        <i class="fa-solid fa-bars text-gray-900 p-2 px-3 block md:hidden text-2xl ham"></i>
+        <i class="fa-solid fa-x text-gray-900 p-2 px-3 block md:hidden text-2xl ham hidden cross"></i>
+    </div>
+    <section class="hero my-6 bg-hero-pattern ">
+        <ul class="nav-content white flex flex-col gap-4 shadow-md container mx-auto text-center font-bold py-5 hidden">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+        <div class="container flex flex-col md:flex-row mx-auto">
+            <div class="content flex flex-col gap-6 items-center md:items-start flex-1 order-2 md:order-1 text-center md:text-start">
+                <h1 class="text-4xl font-bold">
+                    Bring everyone together to build better products
+                </h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quo illo, exercitationem nemo adipisci rem atque impedit cumque voluptas ullam?</p>
+                <button class="bg-orange-500 text-white p-2 px-3 rounded-full">
+                    Get Started
+                </button>
+            </div>
+            <div class="content-img flex-1">
+                <img src="img/illustration-intro.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="surcharge py-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-5">
+            <div class="headline">
+                <h2 class="text-3xl font-bold pb-10 text-center md:text-start">
+                    What's different about Surcharge?
+                </h2>
+                <p class="text-gray-500 text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error ipsum quidem quasi animi. Placeat dolorem fugiat ea porro corporis!</p>
+            </div>
+            <div class="point-wrapper">
+                <div class="point flex gap-4 pb-5">
+                    <div class="sno bg-orange-500 text-white p-0.5 px-4 rounded-full inline-block self-start">01</div>
+                    <div class="point-text">
+                        <h6 class="font-bold">
+                            Track company wide progress
+                        </h6>
+                         <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum commodi velit iusto officia sunt esse quasi sint tenetur vero.</p>
+                    </div>
+                </div>
+                <div class="point flex gap-4">
+                    <div class="sno bg-orange-500 text-white p-0.5 px-4 rounded-full inline-block self-start">02</div>
+                    <div class="point-text">
+                        <h6 class="font-bold">
+                            Track company wide progress
+                        </h6>
+                         <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex earum commodi velit iusto officia sunt esse quasi sint tenetur vero.</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <section class="different mx-auto flex flex-col items-center mt-10 container">
+            <h2 class="font-bold text-3xl text-center mb-10">
+                What people are saying?
+            </h2>
+            <div class="card-wrapper flex flex-row gap-10 my-10">
+                <div class="card bg-gray-100 flex flex-col items-center justify-center gap-5 px-10 pb-10">
+                    <img src="img/avatar-anisha.png" alt="" class="icon -mt-10 w-20">
+                    <h6 class="font-bold">Anisha Li</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore aut necessitatibus cupiditate. Laborum consequatur saepe fuga minima veniam nesciunt iusto.</p>
+                </div>
+                <div class="card bg-gray-100 flex flex-col items-center justify-center gap-5 px-10 pb-10 hidden md:block">
+                    <img src="img/avatar-anisha.png" alt="" class="icon -mt-10 w-20">
+                    <h6 class="font-bold">Anisha Li</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore aut necessitatibus cupiditate. Laborum consequatur saepe fuga minima veniam nesciunt iusto.</p>
+                </div> <div class="card bg-gray-100 flex flex-col items-center justify-center gap-5 px-10 pb-10 hidden md:block">
+                    <img src="img/avatar-anisha.png" alt="" class="icon -mt-10 w-20">
+                    <h6 class="font-bold">Anisha Li</h6>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore aut necessitatibus cupiditate. Laborum consequatur saepe fuga minima veniam nesciunt iusto.</p>
+                </div>
+            </div>
+            <button class="my-10 rounded-full bg-orange-500 py-2 px-3 text-white inline-block">Get Started</button>
+    </section>
+    <section class="cta bg-orange-500 mx-auto">
+        <div class="container py-14 block md:flex justify-between items-center mx-auto">
+            <h2 class="text-3xl font-bold mx-auto text-gray-50 text-center md:text-start mb-8">
+                Simplify how your team works today
+            </h2>
+            <button class="bg-gray-50 rounded-full py-2 px-3 mx-auto block">
+                Get Started
+            </button>
+        </div>
+    </section>
+    <footer class="bg-gray-900">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between py-20 md:gap-0 gap-10">
+            <div class="logo-wrapper flex flex-col justify-between gap-4 md:gap-0">
+                <div class="logo text-3xl text-white">
+                    <i class="fa-solid fa-money-bill-wheat text-orange-500"></i> Surcharge
+                </div> 
+                <div class="social flex gap-3 text-white text-3xl">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+            <ul class="link-1 flex flex-col gap-3 text-white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="link-2 flex flex-col gap-3 text-white">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="contact justify-between flex flex-col gap-4 md:gap-0">
+                <form action="#">
+                    <input type="text" placeholder="Updated in your inbox" class="py-2 px-3 rounded-full bg-gray-50 text-gray-300">
+                    <button class="py-2 px-4 bg-orange-500 text-white mx-3 rounded-full">Go</button>
+                </form>
+                <div class="copyright text-white">
+                    Copyright © 2022, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const hamIcon = document.querySelector('.ham');
+        const navContent = document.querySelector('.nav-content');
+        const cross = document.querySelector('.cross');
+
+        hamIcon.addEventListener('click', function() {
+            navContent.classList.toggle('hidden');
+            hamIcon.classList.toggle('hidden');
+            cross.classList.toggle('hidden');
+            navContent.classList.toggle('opacity-0');
+            navContent.classList.toggle('opacity-100');
+        });
+        cross.addEventListener('click', function() {
+            navContent.classList.toggle('hidden');
+            hamIcon.classList.toggle('hidden');
+            cross.classList.toggle('hidden');
+            navContent.classList.toggle('opacity-0');
+            navContent.classList.toggle('opacity-100');
+        });
+        });
+    </script>
+</body>
+</html>

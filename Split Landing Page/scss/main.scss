@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'button';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+.wrapper-red {
+    grid-template-columns: 4fr 1fr;
+}
+.wrapper-dark {
+    transition: all 1.5s ease-in-out;
+    grid-template-columns: 1fr 4fr;
+}
+.card {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h1 {
+    margin: 2rem;
+}
+
+.card-dark {
+    background-color: #333;
+    color:  rgb(213, 213, 213);
+}
+
+.card-red {
+    background-color: red;
+}
+// .bg-red-color {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: red;
+// }
+.bg-red {
+    background: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover, red;
+}
+.bg-dark {
+    background: url('https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover, #333;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+.content {
+    position: relative;
+}
+
+
+@import 'hover-effect';
+@media (max-width: 768px) {
+    h1 {
+        font-size: max(1.5rem, 1rem);
+        word-break: break-all;
+        // word-break: keep-all;
+    }
+    button {
+        padding: 1rem  !important;
+    }
+    .wrapper {
+        transition: all 1s ease;
+    }
+    .wrapper-red {
+        grid-template-columns: 3fr 2fr !important;
+    }
+    .wrapper-dark {
+        grid-template-columns: 2fr 3fr !important;
+    }
+}

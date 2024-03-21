@@ -1,0 +1,76 @@
+$primary-color: orange;
+
+
+@mixin heading-font-sizes($base-font-size: 4rem) {
+    @for $i from 1 through 10 {
+      h#{$i} {
+        font-size: $base-font-size - calc($i/2);
+      }
+    }
+  }
+// Define the base unit
+$base-unit: 0.5rem;
+
+// Define the number of scales
+$scales: 10;
+
+// Create the scales using a loop
+@for $i from 1 through $scales {
+  // Calculate padding and margin for each scale
+  $padding: $base-unit * $i;
+  $margin: $base-unit * $i;
+  
+  // Output the classes for each scale for top, bottom, left, right
+  .pt-#{$i} {
+    padding-top: $padding;
+  }
+  .pb-#{$i} {
+    padding-bottom: $padding;
+  }
+  .pl-#{$i} {
+    padding-left: $padding;
+  }
+  .pr-#{$i} {
+    padding-right: $padding;
+  }
+  
+  .mt-#{$i} {
+    margin-top: $margin;
+  }
+  .mb-#{$i} {
+    margin-bottom: $margin;
+  }
+  .ml-#{$i} {
+    margin-left: $margin;
+  }
+  .mr-#{$i} {
+    margin-right: $margin;
+  }
+
+  // Output the classes for each scale for top/bottom (x-axis) and left/right (y-axis)
+  .px-#{$i} {
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+  .py-#{$i} {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+
+  .mx-#{$i} {
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+  .my-#{$i} {
+    margin-top: $margin;
+    margin-bottom: $margin;
+  }
+
+  // Output the classes for each scale for all sides
+  .p-#{$i} {
+    padding: $padding;
+  }
+  .m-#{$i} {
+    margin: $margin;
+  }
+}

@@ -1,0 +1,66 @@
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.funda .container .row div img,  .reacrt .container .row div img {
+    width: 500px;
+    max-width: 100%;
+}
+.card i {
+    font-size: 5rem;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .news-form {
+        max-width: 50%;
+    }
+    
+}
+@media (max-width: 768px) {
+    .hero .container {
+        padding-top: 1rem !important;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+    .hero .container img {
+        margin-top: 0;
+        padding-top: 0;
+        order: 1 !important;
+        height: 30vh;
+        margin-bottom: 2rem;
+    }
+    .hero .container .content {
+        order: 2 !important;
+    }
+    .card-wrapper {
+        margin: 1rem 0 !important;
+    }
+    .card {
+        margin: 0 auto;
+        // width: 400px;
+        // max-width: 80%;
+    }
+    .funda .container .row div img,  .reacrt .container .row div img {
+        width: 300px;
+        max-width: 100%;
+    }
+    .reacrt .container .row :nth-child(1) {
+        order: 2 !important;
+    }
+    .reacrt .container .row :nth-child(2) {
+        order: 1 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    
+}

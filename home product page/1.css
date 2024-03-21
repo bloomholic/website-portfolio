@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&display=swap');
+
+:root{
+    --background-color: #fefefe;
+    --primary-black: #353535;
+    --secondary-black: #515457;
+    --secondary-background: #dfdfdf;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: var(--background-color);
+}
+.width {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-black);
+    padding: 1rem;
+}
+.logo {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.ul-right {
+    padding: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    color: var(--secondary-black);
+}
+.ul-right li:hover {
+    color: var(--primary-black);
+    cursor: pointer;
+}
+.hero {
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+.hero .img-container {
+    flex: 1;
+    max-height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.hero .text {
+    flex: 1;
+    max-width: 90%;
+}
+.hero .text * {
+    margin: 2rem;
+}
+h1 {
+    font-size: 3rem;
+}
+p {
+    color: var(--secondary-black);
+}
+button {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+
+}
+.quote {
+    background-color: var(--secondary-background);
+    color: var(--secondary-black);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 4rem 0 4rem 0;
+}
+h3 {
+    font-weight: 250;
+}
+.quoter {
+   display: flex;
+   justify-content: center;
+}
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+hr {
+    background-color: rgb(162, 59, 59);
+}
+.line-break {
+    width: 100%;
+    height: 1px;
+    background-color: #ececec;
+    margin: 1rem 0 1rem 0;
+}
+.info-block {
+    margin: 1rem 0 1rem 4rem;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+.block * {
+    margin: 2rem 0;
+}
